@@ -9,6 +9,17 @@ var main = function() {
             duration: 200
         });
     });
+
+    $('.icon-close').click(function() {
+        $('.menu').animate({
+            left: '-285px',
+            duration: 200
+        });
+        $('body').animate({
+            left: '0px',
+            duration: 200
+        });
+    });
 };
 
 $(document).ready(main);
